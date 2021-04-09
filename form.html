@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/form.css">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>나의 개발 유형찾기</title>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="survey">
+        <div class="wrapper">
+            <form id="form" method="post">
+
+
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">1/10</h3>
+                        <h3 class="question">당신이 가장 재밌었던 수업은?</h3>
+                    </div>
+
+                    <div class="answer">
+
+                        <div>
+                            <input type="radio" name="question-1" id="choice-1" value="5" required=""
+                                control-id="ControlID-1">
+                            <label for="choice-1">1. 게임 개발(유니티, 언리얼, Pygame)</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-1" id="choice-2" value="1" required=""
+                                control-id="ControlID-2">
+                            <label for="choice-2">2. 백엔드 또는 인프라(C계열-닷넷, JAVA-Spring, Python-Django, Network, Ubuntu,
+                                CentOS, 부하분산, etc)</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-1" id="choice-3" value="4" required="">
+                            <label for="choice-3">3. 정보보안(해킹과 방어)</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-1" id="choice-4" value="2" required="">
+                            <label for="choice-4">4. 프론트엔드(HTML, CSS, Javascript, etc)</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-1" id="choice-5" value="3" required="">
+                            <label for="choice-5">5. 데이터 분석과 인공지능(전처리, 분석, 시각화, 머신러닝, 딥러닝)</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-1" id="choice-6" value="" required="">
+                            <label for="choice-6">6. 이 길은 내 길이 아닌 것 같다... 고로 재미있는지 모르겠다.</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn_wrap">
+
+
+
+                        <button class="next_btn" control-id="ControlID-3">다 음</button>
+
+                    </div>
+
+                </div>
+
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">2/10</h3>
+                        <h3 class="question">여러분의 서비스가 성공하였다면, 서비스를 성공시킨 요소는?</h3>
+                    </div>
+
+                    <div class="answer">
+
+                        <div>
+                            <input type="radio" name="question-2" id="choice-7" value="3" required=""
+                                control-id="ControlID-4">
+                            <label for="choice-7">1. 데이터 분석을 통한 효과적인 개인 맞춤형 서비스</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-2" id="choice-8" value="2" required=""
+                                control-id="ControlID-5">
+                            <label for="choice-8">2. 화려하거나 품격있는 디자인, 흥미로운 콘텐츠 제작</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-2" id="choice-9" value="5" required="">
+                            <label for="choice-9">3. 게임적인(Gamification, 게이미피케이션) 요소 도입</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-2" id="choice-10" value="1" required="">
+                            <label for="choice-10">4. 안정적인 서비스 운용</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-2" id="choice-11" value="4" required="">
+                            <label for="choice-11">5. 믿을 수 있는 정보 관리</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn_wrap btn_sort">
+
+
+                        <button class="prev_btn" control-id="ControlID-6">이 전</button>
+
+
+                        <button class="next_btn" control-id="ControlID-7">다 음</button>
+
+                    </div>
+
+                </div>
+
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">3/10</h3>
+                        <h3 class="question">오류가 생겼습니다. 모두의 중요도가 동일하다고 할 때 당신이 먼저 처리할 오류는?</h3>
+                    </div>
+
+                    <div class="answer">
+
+                        <div>
+                            <input type="radio" name="question-3" id="choice-12" value="1" required=""
+                                control-id="ControlID-8">
+                            <label for="choice-12">1. 서브 페이지 화면 로딩 시간이 딜레이되는 현상</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-3" id="choice-13" value="3" required=""
+                                control-id="ControlID-9">
+                            <label for="choice-13">2. 데이터 분석을 통한 맞춤형 광고 서비스 오류</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-3" id="choice-14" value="2" required="">
+                            <label for="choice-14">3. 홈페이지 화면의 뒤틀린 이미지, 폰트 깨짐 현상</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-3" id="choice-15" value="4" required="">
+                            <label for="choice-15">4. (개인정보 보호법에는 저촉되지 않지만) 민감 정보가 노출되는 현상</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-3" id="choice-16" value="5" required="">
+                            <label for="choice-16">5. 오류가 발생했을 때 할 수 있는 게임</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn_wrap btn_sort">
+
+
+                        <button class="prev_btn" control-id="ControlID-10">이 전</button>
+
+
+                        <button class="next_btn" control-id="ControlID-11">다 음</button>
+
+                    </div>
+
+                </div>
+
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">4/10</h3>
+                        <h3 class="question">당신이 만약 웹 서비스를 만들었을 때, 가장 듣기 좋을 것 같은 칭찬은?</h3>
+                    </div>
+
+                    <div class="answer">
+
+                        <div>
+                            <input type="radio" name="question-4" id="choice-17" value="2" required=""
+                                control-id="ControlID-12">
+                            <label for="choice-17">1. 개발자 친구 : "네가 만든 사이트 진짜 예쁘다!"</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-4" id="choice-18" value="1" required=""
+                                control-id="ControlID-13">
+                            <label for="choice-18">2. 개발자 친구 : "동시 접속이 1천명인데 이렇게 빠르다고?" 또는 "SNS 로그인이 다 들어가 있네, 난 요즘 이런게
+                                편하더라."</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-4" id="choice-19" value="4" required="">
+                            <label for="choice-19">3. 해커 친구 : "보안 취약점이 없는 완벽한 시큐어코딩이야. 너의 사이트는 완벽해."</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-4" id="choice-20" value="3" required="">
+                            <label for="choice-20">4. 개발자 친구 : "서비스를 해보니 내가 원하는 광고가 딱! 나오니까 너무 좋더라!"</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-4" id="choice-21" value="5" required="">
+                            <label for="choice-21">5. 게이머 친구 : "사이트에 있는 그 게임 때문에, 2박 3일동안 잠도 자지 못했어."</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn_wrap btn_sort">
+
+
+                        <button class="prev_btn" control-id="ControlID-14">이 전</button>
+
+
+                        <button class="next_btn" control-id="ControlID-15">다 음</button>
+
+                    </div>
+
+                </div>
+
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">5/10</h3>
+                        <h3 class="question">당신은 영양제를 구입하려고 합니다. 당신이 가장 먼저 고려할 것은?</h3>
+                    </div>
+
+                    <div class="answer">
+
+                        <div>
+                            <input type="radio" name="question-5" id="choice-22" value="1" required=""
+                                control-id="ControlID-16">
+                            <label for="choice-22">1. 일단 효과가 좋은걸 사자! 고농축 영양제 구매</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-5" id="choice-23" value="2" required=""
+                                control-id="ControlID-17">
+                            <label for="choice-23">2. 화려한 상품 상세 페이지가 내 눈을 사로잡는다. 이걸로 사야지!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-5" id="choice-24" value="3" required="">
+                            <label for="choice-24">3. 동일한 영양제 함량을 제조사별로 비교해 봐야지</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-5" id="choice-25" value="4" required="">
+                            <label for="choice-25">4. 믿을 수 있는 영양제가 맞나? 꼼꼼하게 따져봐야겠어</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-5" id="choice-26" value="5" required="">
+                            <label for="choice-26">5. 맛없으면 결국 안 먹어! 젤리로 된 제품은 없나?</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn_wrap btn_sort">
+
+
+                        <button class="prev_btn" control-id="ControlID-18">이 전</button>
+
+
+                        <button class="next_btn" control-id="ControlID-19">다 음</button>
+
+                    </div>
+
+                </div>
+
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">6/10</h3>
+                        <h3 class="question">당신은 망해가는 빵집을 인수했습니다. 당신이 가장 먼저 시작할 일은?</h3>
+                    </div>
+
+                    <div class="answer">
+
+                        <div>
+                            <input type="radio" name="question-6" id="choice-27" value="3" required=""
+                                control-id="ControlID-20">
+                            <label for="choice-27">1. "어떤 빵이 제일 잘 나갈까?" 수요를 조사해서 새로운 메뉴 만들기</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-6" id="choice-28" value="1" required=""
+                                control-id="ControlID-21">
+                            <label for="choice-28">2. "빵집은 빵이 맛있어야지!" 효율이 좋은 새 오븐 사기</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-6" id="choice-29" value="5" required="">
+                            <label for="choice-29">3. "일단 이벤트를 통해 손님을 모아야 해!" 파격 세일 이벤트 등 새로운 이벤트 만들기</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-6" id="choice-30" value="2" required="">
+                            <label for="choice-30">4. "요즘은 레트로 갬성이지~" 유행이 다시 돌아온 90년대 간판 설치하기</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-6" id="choice-31" value="4" required="">
+                            <label for="choice-31">5. "음식을 파는 곳은 당연히 깨끗해야지!" 위생과 안전을 위해 세X코, 캡X 등록하기</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn_wrap btn_sort">
+
+
+                        <button class="prev_btn" control-id="ControlID-22">이 전</button>
+
+
+                        <button class="next_btn" control-id="ControlID-23">다 음</button>
+
+                    </div>
+
+                </div>
+
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">7/10</h3>
+                        <h3 class="question">당신은 친구에게 크리스마스 스웨터를 선물해 주기로 했습니다. 당신의 선택은?</h3>
+                    </div>
+
+                    <div class="answer">
+
+                        <div>
+                            <input type="radio" name="question-7" id="choice-32" value="2" required=""
+                                control-id="ControlID-24">
+                            <label for="choice-32">1. 난 내 눈을 믿는다 너한테 가장 잘 어울리는 옷은 내가 알아!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-7" id="choice-33" value="1" required=""
+                                control-id="ControlID-25">
+                            <label for="choice-33">2. 겨울옷은 따뜻해야지~ 기능 중시! 이번 겨울 최고 한파래</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-7" id="choice-34" value="3" required="">
+                            <label for="choice-34">3. 두뇌 풀가동! 지금까지 친구가 입었던 니트류 옷을 알아낸다. 네가 마음에 들어하는 옷은 이미 내 뇌 속에
+                                있다!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-7" id="choice-35" value="4" required="">
+                            <label for="choice-35">4. 알러지가 생길 수 있으니 꼼꼼하게 성분 표시를 읽고 알러지 프리 제품을 사줘야지!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-7" id="choice-36" value="5" required="">
+                            <label for="choice-36">5. 잊지 못할 재미있는 선물을 줘야지! 반짝이는 전구 달린 어글리 스웨터</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn_wrap btn_sort">
+
+
+                        <button class="prev_btn" control-id="ControlID-26">이 전</button>
+
+
+                        <button class="next_btn" control-id="ControlID-27">다 음</button>
+
+                    </div>
+
+                </div>
+
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">8/10</h3>
+                        <h3 class="question">당신은 음료 회사의 잘나가는 직원으로, 사장님이 당신에게 신메뉴 개발을 일임하겠다고 합니다. 당신의 음료 개발 방법은?</h3>
+                    </div>
+
+                    <div class="answer">
+
+                        <div>
+                            <input type="radio" name="question-8" id="choice-37" value="2" required=""
+                                control-id="ControlID-28">
+                            <label for="choice-37">1. 손님들의 눈길을 확 끌어보자! 요즘 유행하는 화려한 디자인으로 포장한 음료!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-8" id="choice-38" value="1" required=""
+                                control-id="ControlID-29">
+                            <label for="choice-38">2. 고객신뢰가 최우선! 프랜차이즈 매장마다 레시피가 다르면 안 되니까 정확한 용량과 제조법은 필수!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-8" id="choice-39" value="3" required="">
+                            <label for="choice-39">3. 인기 많은 음료 싹 가지고 와! 왜 인기가 있었는지, 인기 요인을 찾아보자!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-8" id="choice-40" value="5" required="">
+                            <label for="choice-40">4. 요즘은 홍보로 반은 먹고 들어가지! SNS 첼린지 이벤트로 사람들의 관심을 끌자!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-8" id="choice-41" value="4" required="">
+                            <label for="choice-41">5. 레시피를 만드는 것도 중요하지만, 우리만의 독자적인 레시피가 새어나가지 않게 조심해야 해!</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn_wrap btn_sort">
+
+
+                        <button class="prev_btn" control-id="ControlID-30">이 전</button>
+
+
+                        <button class="next_btn" control-id="ControlID-31">다 음</button>
+
+                    </div>
+
+                </div>
+
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">9/10</h3>
+                        <h3 class="question">당신은 바다에 놀러왔습니다. 성공적인 여행을 위해 가장 먼저 해야할 것은?</h3>
+                    </div>
+
+                    <div class="answer">
+
+                        <div>
+                            <input type="radio" name="question-9" id="choice-42" value="2" required=""
+                                control-id="ControlID-32">
+                            <label for="choice-42">1. 일단 파라솔이랑 음식 세팅! 사진 잘 찍어서 SNS에 여행 온 거 자랑해야지!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-9" id="choice-43" value="4" required=""
+                                control-id="ControlID-33">
+                            <label for="choice-43">2. 여행 왔는데 짐을 잃어버리면 낭패지! 락커룸이 어디 있는지 찾아보자!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-9" id="choice-44" value="1" required="">
+                            <label for="choice-44">3. 준비물은 다 챙겨왔지? 빠뜨린 거 없는지 다시 확인하자!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-9" id="choice-45" value="3" required="">
+                            <label for="choice-45">4. 이왕 온 거 유명한 건 다 해 봐야지! 근처에 어떤 맛집이 있는지 알아보자!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-9" id="choice-46" value="5" required="">
+                            <label for="choice-46">5. 그냥 노는 건 재미없잖아? 비치볼 게임 하면서 놀자!</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn_wrap btn_sort">
+
+
+                        <button class="prev_btn" control-id="ControlID-34">이 전</button>
+
+
+                        <button class="next_btn" control-id="ControlID-35">다 음</button>
+
+                    </div>
+
+                </div>
+
+                <div class="test">
+                    <div class="question_container">
+                        <h3 class="number">10/10</h3>
+                        <h3 class="question">당신은 친구의 집들이에 가려고 합니다. 당신이 선택한 선물은?</h3>
+                    </div>
+
+                    <div class="answer">
+
+                        <div>
+                            <input type="radio" name="question-10" id="choice-47" value="2" required=""
+                                control-id="ControlID-36">
+                            <label for="choice-47">1. 집 꾸미기에 도움이 되는 예쁜 인테리어 소품을 골라볼까?</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-10" id="choice-48" value="1" required=""
+                                control-id="ControlID-37">
+                            <label for="choice-48">2. 실용성이 갑이지! 화장지랑 수건 세트랑...</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-10" id="choice-49" value="3" required="">
+                            <label for="choice-49">3. 음... 우선 센스있는 집들이 선물 먼저 검색해봐야지!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-10" id="choice-50" value="5" required="">
+                            <label for="choice-50">4. 집들이 가서 뭐하겠어! 보드 게임이나 사 가자!</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="question-10" id="choice-51" value="4" required="">
+                            <label for="choice-51">5. 역시 집은 안전이 최고!! 현관문 보안장치 사줘야겠다.</label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="btn_wrap btn_sort">
+
+
+                        <button class="prev_btn" control-id="ControlID-38">이 전</button>
+
+
+                        <input type="submit" value="제 출" class="submit_btn" control-id="ControlID-39">
+
+                    </div>
+
+                </div>
+
+
+            </form>
+        </div>
+    </section>
+
+
+
+    <script type="text/javascript" src="/static/js/form.js"></script>
+
+
+</body>
+
+</html>

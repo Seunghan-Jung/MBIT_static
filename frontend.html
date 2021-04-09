@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- facebook -->
+    <meta property="og:title" content="나의 개발 유형은?">
+    <meta property="og:image" content="/static/img/developer/frontend.png">
+    <meta property="og:url" content="https://mbit.weniv.co.kr/result/2/">
+    <meta property="og:description" content="나에게 꼭 맞는 개발 유형은 무엇일까?">
+    <!-- //facebook -->
+    <!-- kakao -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <!-- //kakao -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/result.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>나의 개발 유형찾기</title>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <section id="loading" style="display: none;">
+        <div class="loading_img"></div>
+    </section>
+    <section id="main_contents" style="display: flex;">
+        <div class="wrapper">
+            <div class="result">
+                <div class="titles">
+                    <h3>예술적 감각이 뛰어난 당신은!</h3>
+                    <h1>프론트엔드 개발자</h1>
+                </div>
+                <div class="result_img">
+                    <img src="/static/img/developer/frontend.png" alt="frontend">
+                </div>
+            </div>
+            <div class="result_explains">
+                <div class="explain">
+                    <h3 class="title">나와 맞는 개발 유형은 프론트엔드 개발자?!</h3>
+                    <ul>
+
+                        <li>
+                            내 눈으로 결과를 확인해야 함. 바로 바로 적용되는 화면에 성취감을 느낌.
+                        </li>
+
+                        <li>
+                            어렸을 때 한번쯤은 호그와트 들어가는 상상해보지 않나? 상상력이 풍부하고 새로운 도전을 즐기는 편임.
+                        </li>
+
+                        <li>
+                            은근히 완벽주의자 성향이 있어서 1px이라도 비뚤어지거나 대칭이 맞지 않으면 참을 수 없음.
+                        </li>
+
+                        <li>
+                            자유로운 영혼이지만 내가 지금 무엇을 해야하는지 정확히 알아야 함.
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="explain">
+                    <h3 class="title">프론트엔드 개발자(이)가 뭐지?</h3>
+                    <ul>
+
+                        <li>
+                            FE(Front-End)라고도 부르며, 웹이나 앱을 이용할 때 눈으로 보는 모든 화면들을 만드는 개발자를 의미합니다.
+                        </li>
+
+                        <li>
+                            반응형 웹이나 UI를 만들어야 하기 때문에 미적 감각이 필요합니다.
+                        </li>
+
+                        <li>
+                            웹 퍼블리셔와 프론트엔드 개발자는 공동의 영역을 공유합니다. 웹 퍼블리셔는 주로 HTML, CSS를 사용하여 화면을 설계합니다. 프론트엔드 개발자는 js,
+                            jQuery, 백엔드와의 연동 등 화면 설계와 동시에 화면 구조까지 살펴볼 수 있는 사람을 말합니다. 그러나 실무에서는 이 두 가지 직업군의 롤 모두를 수행하는
+                            사람이 많습니다.
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="explain">
+                    <h3 class="title">그래서 어떤 언어부터 공부해야 할까?</h3>
+                    <ul class="language_lists">
+
+                        <li>
+                            <div class="img_wrap">
+                                <img src="/static/img/lang/html.png" alt="HTML">
+                            </div>
+                            <h3>HTML</h3>
+                        </li>
+
+                        <li>
+                            <div class="img_wrap">
+                                <img src="/static/img/lang/css.png" alt="CSS">
+                            </div>
+                            <h3>CSS</h3>
+                        </li>
+
+                        <li>
+                            <div class="img_wrap">
+                                <img src="/static/img/lang/js.png" alt="JavaScript">
+                            </div>
+                            <h3>JavaScript</h3>
+                        </li>
+
+                    </ul>
+
+                    <ul>
+
+                        <li>
+                            HTML, CSS, JavaScript 웹을 구성하는 3요소 입니다! (얼마 전 Web Assembly가 추가되어 4요소가 되었지만 처음에는 3개만 배우셔도
+                            충분합니다!)
+                        </li>
+
+                        <li>
+                            기본적인 내용이 숙지되었다면 CSS Animation, Media Query, Canvas, JSON parsing, Ajax, Node.js, jQuery를
+                            공부해보세요!
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="lectures">
+                <h3 class="title">강의 추천</h3>
+                <p>프론트엔드 개발자 공부를 시작하기 좋은 강의를 추천해 드릴게요!</p>
+                <ul>
+
+                    <li>
+                        <a href="https://www.inflearn.com/course/제주코딩-웹개발-30분요약" target="_blank">
+                            <img src="/static/img/lec/lec_30minutes.png"
+                                alt="HTML, CSS, JS, Python 30분 요약강좌">
+                            <h3>HTML, CSS, JS, Python 30분 요약강좌</h3>
+                            <button type="button">강의 보러가기</button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.inflearn.com/course/web_fullstack" target="_blank">
+                            <img src="/static/img/lec/lec_web_fullstack.png"
+                                alt="코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)">
+                            <h3>코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)</h3>
+                            <button type="button">강의 보러가기</button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.inflearn.com/course/제주코딩-자바스크립트-100제" target="_blank">
+                            <img src="/static/img/lec/lec_js100.png"
+                                alt="제주코딩베이스캠프 Code Festival: JavaScript 100제">
+                            <h3>제주코딩베이스캠프 Code Festival: JavaScript 100제</h3>
+                            <button type="button">강의 보러가기</button>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="share">
+                <div class="url">
+                    <button class="copy_btn" type="button">URL 복사하기</button>
+                </div>
+                <div class="facebook">
+                    <button class="facebook_share" type="button">Facebook 공유하기</button>
+                </div>
+                <div class="kakao">
+                    <button class="kakao_share" type="button">카카오톡 공유하기</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <ul>
+                    <il>
+                        <h3>...이건 내가 아니야... 잘못된게 분명해!</h3>
+                        <a href="/">
+                            <button type="button">테스트 다시 하기</button>
+                        </a>
+                    </il>
+                    <il>
+                        <h3>다른 사람들은 어떤 유형일까?</h3>
+                        <a href="/all_results.html">
+                            <button type="button">다른 결과 알아보기</button>
+                        </a>
+                    </il>
+                    <il>
+                        <h3>이런 테스트는 도대체 누가 만든거야? ^0^;;</h3>
+                        <a href="http://www.jejucodingcamp.com/">
+                            <button class="color" type="button">제주코딩베이스캠프</button>
+                        </a>
+                    </il>
+                    <il>
+                        <h3>나는 며칠 동안 훈련해야 전문가가 될까?</h3>
+                        <a href="http://paullab.co.kr/10000hours.html">
+                            <button class="color_second" type="button">1만 시간의 법칙</button>
+                        </a>
+                    </il>
+                </ul>
+            </div>
+            <div class="weniv">
+                <a href="http://www.paullab.co.kr">
+                    <img src="/static/img/weniv_logo_purple.png" alt="weniv">
+                </a>
+                <p>
+                    ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br>
+                    수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script type="text/javascript" src="/static/js/result.js"></script>
+
+
+</body>
+
+</html>

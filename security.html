@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- facebook -->
+    <meta property="og:title" content="나의 개발 유형은?">
+    <meta property="og:image" content="/static/img/developer/information_security.png">
+    <meta property="og:url" content="https://mbit.weniv.co.kr/result/4/">
+    <meta property="og:description" content="나에게 꼭 맞는 개발 유형은 무엇일까?">
+    <!-- //facebook -->
+    <!-- kakao -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <!-- //kakao -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/result.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>나의 개발 유형찾기</title>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <section id="loading" style="display: none;">
+        <div class="loading_img"></div>
+    </section>
+    <section id="main_contents" style="display: flex;">
+        <div class="wrapper">
+            <div class="result">
+                <div class="titles">
+                    <h3>모든지 뚫고, 막을 수 있는 당신은!</h3>
+                    <h1>정보보안</h1>
+                </div>
+                <div class="result_img">
+                    <img src="/static/img/developer/information_security.png" alt="frontend">
+                </div>
+            </div>
+            <div class="result_explains">
+                <div class="explain">
+                    <h3 class="title">나와 맞는 개발 유형은 정보보안?!</h3>
+                    <ul>
+
+                        <li>
+                            어떤 서비스가 만들어지기 전에 시큐어코딩이 이뤄지지 않으면 사상누각! 아무리 좋은 서비스라 하더라도 단번에 무너질 수 있어!
+                        </li>
+
+                        <li>
+                            그냥 웹페이지를 접속했을 뿐인데 나에겐 취약점이 너무나 많이 보인다! 이렇게 해도 뚫릴 것 같고, 저렇게 해도 뚫릴 것 같아.
+                        </li>
+
+                        <li>
+                            해커, 정의의 이름으로 너희들을 용납하지 않겠다!
+                        </li>
+
+                        <li>
+                            이미 완성품인데 괜히 분해해서 분석해 보고 싶음. 사실 그렇게 분해하다가 망가진 것도 있음...ㅎ
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="explain">
+                    <h3 class="title">정보보안(이)가 뭐지?</h3>
+                    <ul>
+
+                        <li>
+                            정보보안은 보안 취약점을 찾아내어 문제를 해결하고 이를 악의적으로 이용하는 것을 방지하는 행위를 말합니다.
+                        </li>
+
+                        <li>
+                            기업 측면에서는 네트워크, 데이터베이스 등의 정보자산을 안전하게 보호하고, 일반 사용자 측면에서는 개인 정보 유출, 남용을 방지하는 역할을 담당한다.
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="explain">
+                    <h3 class="title">그래서 어떤 언어부터 공부해야 할까?</h3>
+                    <ul class="language_lists">
+
+                        <li>
+                            <div class="img_wrap">
+                                <img src="/static/img/lang/c.png" alt="C">
+                            </div>
+                            <h3>C</h3>
+                        </li>
+
+                        <li>
+                            <div class="img_wrap">
+                                <img src="/static/img/lang/python.png" alt="Python">
+                            </div>
+                            <h3>Python</h3>
+                        </li>
+
+                        <li>
+                            <div class="img_wrap">
+                                <img src="/static/img/lang/sql.png" alt="SQL">
+                            </div>
+                            <h3>SQL</h3>
+                        </li>
+
+                    </ul>
+
+                    <ul>
+
+                        <li>
+                            Linux, Windows 등의 운영체제
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="lectures">
+                <h3 class="title">강의 추천</h3>
+                <p>정보보안 공부를 시작하기 좋은 강의를 추천해 드릴게요!</p>
+                <ul>
+
+                    <li>
+                        <a href="https://www.inflearn.com/course/정보보안-패스파인더" target="_blank">
+                            <img src="/static/img/lec/lec_pathfinder.png" alt="정보보안 패스파인더">
+                            <h3>정보보안 패스파인더</h3>
+                            <button type="button">강의 보러가기</button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.inflearn.com/users/170213" target="_blank">
+                            <img src="/static/img/lec/lec_sql.png" alt="실습으로 배우는 SQL injection">
+                            <h3>실습으로 배우는 SQL injection</h3>
+                            <button type="button">강의 보러가기</button>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="share">
+                <div class="url">
+                    <button class="copy_btn" type="button">URL 복사하기</button>
+                </div>
+                <div class="facebook">
+                    <button class="facebook_share" type="button">Facebook 공유하기</button>
+                </div>
+                <div class="kakao">
+                    <button class="kakao_share" type="button">카카오톡 공유하기</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <ul>
+                    <il>
+                        <h3>...이건 내가 아니야... 잘못된게 분명해!</h3>
+                        <a href="/">
+                            <button type="button">테스트 다시 하기</button>
+                        </a>
+                    </il>
+                    <il>
+                        <h3>다른 사람들은 어떤 유형일까?</h3>
+                        <a href="/all_results.html">
+                            <button type="button">다른 결과 알아보기</button>
+                        </a>
+                    </il>
+                    <il>
+                        <h3>이런 테스트는 도대체 누가 만든거야? ^0^;;</h3>
+                        <a href="http://www.jejucodingcamp.com/">
+                            <button class="color" type="button">제주코딩베이스캠프</button>
+                        </a>
+                    </il>
+                    <il>
+                        <h3>나는 며칠 동안 훈련해야 전문가가 될까?</h3>
+                        <a href="http://paullab.co.kr/10000hours.html">
+                            <button class="color_second" type="button">1만 시간의 법칙</button>
+                        </a>
+                    </il>
+                </ul>
+            </div>
+            <div class="weniv">
+                <a href="http://www.paullab.co.kr">
+                    <img src="/static/img/weniv_logo_purple.png" alt="weniv">
+                </a>
+                <p>
+                    ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br>
+                    수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script type="text/javascript" src="/static/js/result.js"></script>
+
+
+</body>
+
+</html>

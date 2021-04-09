@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- facebook -->
+    <meta property="og:title" content="나의 개발 유형은?">
+    <meta property="og:image" content="/static/img/developer/backend.png">
+    <meta property="og:url" content="https://mbit.weniv.co.kr/result/1/">
+    <meta property="og:description" content="나에게 꼭 맞는 개발 유형은 무엇일까?">
+    <!-- //facebook -->
+    <!-- kakao -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <!-- //kakao -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/result.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>나의 개발 유형찾기</title>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <section id="loading" style="display: none;">
+        <div class="loading_img"></div>
+    </section>
+    <section id="main_contents" style="display: flex;">
+        <div class="wrapper">
+            <div class="result">
+                <div class="titles">
+                    <h3>보이지 않는 것을 보는 당신은!</h3>
+                    <h1>백엔드 개발자</h1>
+                </div>
+                <div class="result_img">
+                    <img src="/static/img/developer/backend.png" alt="frontend">
+                </div>
+            </div>
+            <div class="result_explains">
+                <div class="explain">
+                    <h3 class="title">나와 맞는 개발 유형은 백엔드 개발자?!</h3>
+                    <ul>
+
+                        <li>
+                            어떤 일이든 안정적인 것이 우선임. 밴드 활동을 한다면, 화려한 보컬보다는 안정적인 연주를 이끌어나가는 베이스와 드럼을 맡는 편.
+                        </li>
+
+                        <li>
+                            주로 데이터를 다루는 데에 관심이 있음. 시각적으로 디자인을 하는 것에는 관심이 없고 귀찮음.
+                        </li>
+
+                        <li>
+                            논리적인 사고를 하는 것을 즐기는 스타일으로 추리소설, 방탈출 게임 등을 좋아하고 어려운 문제를 해결하는데 성취감을 느낌.
+                        </li>
+
+                        <li>
+                            효율적인 거 너무 좋아 최고야...! 목적지에 갈 때도 최단 경로 알아내서 그 길로 가는 편. 지하철 탈 때 아무 데서나 서 있지 않음. 빠른 환승 구역 앞에 서
+                            있어야 마음이 안정됨.
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="explain">
+                    <h3 class="title">백엔드 개발자(이)가 뭐지?</h3>
+                    <ul>
+
+                        <li>
+                            프론트 개발자가 사용자에게 보여지는 화면을 담당하는 개발자라면, 백엔드 개발자는 로그인, 추천 기능 등 서비스의 뒷부분 즉, 서버 설계를 담당하는 개발자입니다.
+                        </li>
+
+                        <li>
+                            클라이언트(사용자)와 데이터베이스(데이터가 모여있는 곳) 사이를 중계하는 서버를 개발합니다. 클라이언트가 요청하는 데이터를 가공하여 제공(예를 들어 넷플릭스에서 내가
+                            원하는 영상 리스트업)하는 프로그램을 개발합니다.
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="explain">
+                    <h3 class="title">그래서 어떤 언어부터 공부해야 할까?</h3>
+                    <ul class="language_lists">
+
+                        <li>
+                            <div class="img_wrap">
+                                <img src="/static/img/lang/python.png" alt="python">
+                            </div>
+                            <h3>python</h3>
+                        </li>
+
+                        <li>
+                            <div class="img_wrap">
+                                <img src="/static/img/lang/java.png" alt="Java">
+                            </div>
+                            <h3>Java</h3>
+                        </li>
+
+                        <li>
+                            <div class="img_wrap">
+                                <img src="/static/img/lang/js.png" alt="JavaScript">
+                            </div>
+                            <h3>JavaScript</h3>
+                        </li>
+
+                    </ul>
+
+                    <ul>
+
+                        <li>
+                            python을 배우신 후에는, Django 또는 Flask 웹 프레임워크를 배우시면 됩니다.
+                        </li>
+
+                        <li>
+                            Java를 배우신 후에는, Spring과 Spring Boot 웹 프레임워크를 공부하시면 좋습니다.
+                        </li>
+
+                        <li>
+                            JavaScript를 배우신 경우 Node.js라는 런타임 환경과 그 위에서 동작하는 Express.js 등의 웹 프레임워크를 공부하시면 됩니다.
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="lectures">
+                <h3 class="title">강의 추천</h3>
+                <p>백엔드 개발자 공부를 시작하기 좋은 강의를 추천해 드릴게요!</p>
+                <ul>
+
+                    <li>
+                        <a href="https://www.inflearn.com/course/파이썬-부트캠프" target="_blank">
+                            <img src="/static/img/lec/lec_python_bootcamp.png" alt="Python 부트캠프">
+                            <h3>Python 부트캠프</h3>
+                            <button type="button">강의 보러가기</button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.inflearn.com/course/web_fullstack" target="_blank">
+                            <img src="/static/img/lec/lec_web_fullstack.png"
+                                alt="코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)">
+                            <h3>코알못에서 웹서비스 런칭까지 : 제주 코딩 베이스캠프(Django)</h3>
+                            <button type="button">강의 보러가기</button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.inflearn.com/course/Django-미니프로젝트강좌" target="_blank">
+                            <img src="/static/img/lec/lec_django_mini.png"
+                                alt="Django Mini project BEST 3">
+                            <h3>Django Mini project BEST 3</h3>
+                            <button type="button">강의 보러가기</button>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="share">
+                <div class="url">
+                    <button class="copy_btn" type="button">URL 복사하기</button>
+                </div>
+                <div class="facebook">
+                    <button class="facebook_share" type="button">Facebook 공유하기</button>
+                </div>
+                <div class="kakao">
+                    <button class="kakao_share" type="button">카카오톡 공유하기</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <ul>
+                    <il>
+                        <h3>...이건 내가 아니야... 잘못된게 분명해!</h3>
+                        <a href="/">
+                            <button type="button">테스트 다시 하기</button>
+                        </a>
+                    </il>
+                    <il>
+                        <h3>다른 사람들은 어떤 유형일까?</h3>
+                        <a href="/all_results.html">
+                            <button type="button">다른 결과 알아보기</button>
+                        </a>
+                    </il>
+                    <il>
+                        <h3>이런 테스트는 도대체 누가 만든거야? ^0^;;</h3>
+                        <a href="http://www.jejucodingcamp.com/">
+                            <button class="color" type="button">제주코딩베이스캠프</button>
+                        </a>
+                    </il>
+                    <il>
+                        <h3>나는 며칠 동안 훈련해야 전문가가 될까?</h3>
+                        <a href="http://paullab.co.kr/10000hours.html">
+                            <button class="color_second" type="button">1만 시간의 법칙</button>
+                        </a>
+                    </il>
+                </ul>
+            </div>
+            <div class="weniv">
+                <a href="http://www.paullab.co.kr">
+                    <img src="/static/img/weniv_logo_purple.png" alt="weniv">
+                </a>
+                <p>
+                    ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br>
+                    수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script type="text/javascript" src="/static/js/result.js"></script>
+
+
+</body>
+
+</html>
